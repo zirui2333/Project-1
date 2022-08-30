@@ -20,7 +20,7 @@ std::string Post::getBody()const {
     return body;
 }
 void Post::getTimeStamp()const{
-    char*dt=strtok(ctime(&time_stamp_));
+    char*dt=asctime(localtime(&time_stamp_));
     std::cout<<dt;
 }
 void Post::displayPost()const{
