@@ -20,11 +20,11 @@ std::string Post::getBody()const {
     return body;
 }
 void Post::getTimeStamp()const{
-    char*dt=asctime(localtime(&time_stamp_));
+    char*dt=strtok(ctime(&time_stamp_));
     std::cout<<dt;
 }
 void Post::displayPost()const{
-    std::cout<<std::endl<<getTitle()<<" posted at ";
+    std::cout<<getTitle()<<" posted at ";
     getTimeStamp();
-    std::cout<<":"<<std::endl<<getBody()<<std::endl;
+    std::cout<<":"<<std::endl<<getBody();
 }
