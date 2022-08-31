@@ -19,9 +19,9 @@ std::string Account::getPassword()const{
     return password;
 }
 bool Account::addPost(const std::string&t,const std::string&b){
-    Post p(t,b);
-    dt.push_back(p);
-    if(t!=" "&&b!=" "){
+    if(t!=""&&b!=""){
+        Post p(t,b);
+        dt.push_back(p);
         return true;
     }
     return false;
