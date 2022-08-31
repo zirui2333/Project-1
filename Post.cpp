@@ -27,5 +27,5 @@ void Post::getTimeStamp()const{
 void Post::displayPost()const{
     std::cout<<getTitle()<<" posted at ";
     getTimeStamp();
-    std::cout<<":"<<std::endl<<getBody()<<std::endl;;
+    std::cout<<":"<<std::endl<<getBody()<<std::endl;
 }
