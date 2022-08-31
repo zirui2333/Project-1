@@ -18,7 +18,7 @@ private:
     
     
 public:
-    Post(std::string t,std::string b):title(t),body(b),time_stamp_(time(0)){}
+    Post(std::string t,std::string b):title(t),body(b),time_stamp_(time(NULL)){}
     void setTitle(const std::string t);
     std::string getTitle()const;
     void setBody(const std::string b);
